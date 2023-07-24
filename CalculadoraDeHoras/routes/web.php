@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HorasController;
 use Illuminate\Support\Facades\Route;
 
 /*
