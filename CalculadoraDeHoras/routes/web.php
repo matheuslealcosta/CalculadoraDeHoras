@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/horas', function (){
+    return view('horas');
 });
+
+Route::post('/horas', [HorasController::class, 'calculaHoras'])->name('calcular.horas');
